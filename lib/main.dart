@@ -205,7 +205,7 @@ class _SignUpFormState extends State<SignUpForm> {
         mainAxisSize: MainAxisSize.min,
         children: [
           AnimatedProgressIndicator(value: _formProgress),
-          Text('Sign up', style: TextStyle(fontStyle: FontStyle.normal,fontSize: 18,color: Colors.red)),
+          Text('SignUp', style: TextStyle(fontStyle: FontStyle.normal,fontSize: 20,color: Colors.blue)),
 
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -234,7 +234,7 @@ class _SignUpFormState extends State<SignUpForm> {
                 return states.contains(MaterialState.disabled) ? null : Colors.white;
               }),
               backgroundColor: MaterialStateProperty.resolveWith((Set<MaterialState> states) {
-                return states.contains(MaterialState.disabled) ? null : Colors.green;
+                return states.contains(MaterialState.disabled) ? null : Colors.red;
               }),
             ),
             onPressed: _formProgress == 1 ? _showWelcomeScreen : null,
