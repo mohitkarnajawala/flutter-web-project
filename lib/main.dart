@@ -234,7 +234,7 @@ class _SignUpFormState extends State<SignUpForm> {
                 return states.contains(MaterialState.disabled) ? null : Colors.white;
               }),
               backgroundColor: MaterialStateProperty.resolveWith((Set<MaterialState> states) {
-                return states.contains(MaterialState.disabled) ? null : Colors.red;
+                return states.contains(MaterialState.disabled) ? null : Colors.yellowAccent;
               }),
             ),
             onPressed: _formProgress == 1 ? _showWelcomeScreen : null,
